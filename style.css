@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+/* @media screen and (max-width: 640px) { */
+
+    header {
+        display: flex;
+        background-color: #3867d6;
+    }
+
+    .contaienr {
+        display: flex;
+        width: 85%;
+        max-width: 1023px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul li {
+        list-style: none;
+        float: left;
+        margin-left: 20px;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    header .contaienr h1 {
+        color: #fff;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+
+    main {
+        background-color: #ededed;
+    }
+
+    .sobre_a_loja {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 30px 0 0;
+    }
+
+    .sobre_a_loja img {
+        width: 100%;
+        margin-right: 25px;
+    }
+
+
+    .contaienr h3 {
+        color: #3867d6;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 25px 0 10px;
+        margin-bottom: 35px;
+        border-bottom: 2px solid #3867d6;
+        width: 100%;
+    }
+
+    .produtos {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .lista_produtos {
+        display: grid;
+        /* grid-template-columns: repeat(4, 23.50%); */
+        column-gap: 2%;
+        row-gap: 45px;
+    }
+
+    .lista_produtos li {
+        list-style: none;
+    }
+
+    .lista_produtos img {
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .lista_produtos h4 {
+        font-size: 1.4em;
+        margin: 30px 0 10px;
+        font-weight: bold;
+    }
+
+    .lista_produtos p {
+        color: #585858;
+    }
+
+    .lista_produtos button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 8px 0;
+        font-size: 1.1em;
+        color: #fff;
+        font-weight: bold;
+        background-color: #3867d6;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .lista_produtos button:hover {
+        background-color: #1246bf;
+    }
+/* } */
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header ul {
+        flex-direction: row;
+    }
+
+    .lista_produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header ul {
+        flex-direction: row;
+    }
+
+    .sobre_a_loja {
+        flex-direction: row;
+    }
+
+    .contaienr h3 {
+        padding: 0 0 10px;
+    }
+
+    .sobre_a_loja img {
+        width: 40%;
+    }
+
+    .produtos {
+        margin-top: 50px;
+    }
+
+    .lista_produtos {
+        grid-template-columns: repeat(4, 23.5%);
+    }
+}
