@@ -1,4 +1,3 @@
-### Lista de tarefas
 [Veja o site](https://ebac-shoes-kohl.vercel.app/#produtos)
 
 ### Ferramentas utiliizadas:
